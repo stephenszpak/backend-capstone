@@ -1,0 +1,17 @@
+﻿<div><h2>YOU WIN</h2></div>
+
+<ul>
+    <li ng-repeat="order in orderlist">
+        <strong>Order Date:</strong>{{order.OrderDate | date:'MM/dd/yy'}}
+        <strong>Order Due Date:</strong> {{order.DueDate}} <br /> 
+        <strong>Customer Name: </strong> {{order.CustomerName}} <br />
+        <strong>Customer Address: </strong> {{order.CustomerAddress}} <br />
+        <strong>Number of Colors: </strong> {{order.NumberOfColors}} <br />
+        <strong>Design Fee: </strong> {{order.DesignFee}} <br />
+
+    </li>
+</ul>
+
+
+
+

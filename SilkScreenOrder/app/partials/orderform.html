@@ -1,0 +1,47 @@
+﻿
+<!--CustomerModel-->
+<div class="form-group">
+    <label for="CustomerName">Customer Name</label>
+    <input type="text" class="form-control" id="CustomerName" placeholder="Customer Name" ng-model="newOrder.CustomerName" />
+</div>
+<div class="form-group">
+    <label for="CustomerAddress">Customer Address</label>
+    <input type="text" class="form-control" id="CustomerName" placeholder="Customer Address" ng-model="newOrder.CustomerAddress" />
+</div>
+<button ng-click="submitCustomer(newOrder)">Submit Customer</button>
+
+
+<!--DesignModel-->
+<div class="form-group">
+    <label for="NumberOfColors">Number Of Colors</label>
+    <input type="number" class="form-control" id="NumberOfColors" placeholder="Number Of Colors" ng-model="newOrder.NumberOfColors" />
+</div>
+<div class="form-group">
+    <label for="DesignFee">Design Fee</label>
+    <input type="text" class="form-control" id="DesignFee" placeholder="Design Fee" ng-model="newOrder.DesignFee" />
+</div>
+<button ng-click="submitDesign(newOrder)">Submit Design</button>
+
+<!--ApparelModel-->
+<div class="form-group">
+    <label for="NumberOfItems">Number Of Items</label>
+    <input type="number" class="form-control" id="NumberOfItems" placeholder="Number Of Items" ng-model="newOrder.NumberOfItems" />
+</div>
+<div class="form-group">
+    <label for="ApparelBrand">Apparel Brand</label>
+    <input type="text" class="form-control" id="ApparelBrand" placeholder="Apparel Brand" ng-model="newOrder.ApparelBrand" />
+</div>
+
+<button ng-click="submitApparel(newOrder)">Submit Apparel</button>
+
+
+<!--OrderModel-->
+<div class="form-group">
+    <label for="OrderDate">Order Date</label>
+    <input type="datetime" class="form-control" id="OrderDate" placeholder="Order Date" ng-model="newOrder.OrderDate" />
+</div>
+<div class="form-group">
+    <label for="OrderDate">Order Date</label>
+    <input type="datetime" class="form-control" id="OrderDate" placeholder="Due Date" ng-model="newOrder.DueDate" />
+</div>
+<button ng-click="submitOrder(newOrder)">Submit Order</button>
