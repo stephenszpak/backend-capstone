@@ -11,10 +11,14 @@ namespace SilkScreenOrder.Models
         [Key]
         public int DesignId { get; set; }
 
-        public string NumberOfColors { get; set; }
+        public string AmountOfColorsOfDesign { get; set; }
+
+        public decimal DesignHeight { get; set; }
+
+        public decimal DesignWidth { get; set; }
 
         public decimal DesignFee { get; set; }
 
-        public bool CustomerProvidedDesign { get; set; }
+        public string LogoLocations { get; set; }
     }
 }

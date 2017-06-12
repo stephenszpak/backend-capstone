@@ -21,6 +21,7 @@ namespace SilkScreenOrder.DAL
             _context.SaveChanges();
         }
 
+
         public IEnumerable<Order> GetAllOrders()
         {
             return _context.Orders;

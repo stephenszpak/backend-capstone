@@ -13,6 +13,8 @@ namespace SilkScreenOrder.DAL
 
         IEnumerable<Design> GetDesigns();
 
-        Design GetDesignById(int designId);
+        IQueryable<Design> GetDesignById(int designId);
+
+        Design DeleteDesign(int designId);
     }
 }

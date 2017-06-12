@@ -11,8 +11,14 @@ namespace SilkScreenOrder.Models
         [Key]
         public int ApparelId { get; set; }
 
+        public string ApparelType { get; set; }
+
         public string ApparelBrand { get; set; }
 
-        public int NumberOfItems { get; set; }
+        public int ApparelQuantity { get; set; }
+
+        public decimal ApparelPricePerPiece { get; set; }
+
+        public string ApparelColor { get; set; }
     }
 }

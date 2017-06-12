@@ -102,3 +102,7 @@ C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScre
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.csproj.GenerateResource.Cache
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.updateCreate.resources
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.newthing.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.orderThingy.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.fixedordermodel.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.newOrderform.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.reworkingDatabase.resources

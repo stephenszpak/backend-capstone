@@ -261,6 +261,7 @@
     <Compile Include="Controllers\DesignController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderFormController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAL\ApparelRepo.cs" />
     <Compile Include="DAL\AppContext.cs" />
@@ -269,7 +270,9 @@
     <Compile Include="DAL\IApparelRepo.cs" />
     <Compile Include="DAL\ICustomerRepo.cs" />
     <Compile Include="DAL\IDesignRepo.cs" />
+    <Compile Include="DAL\IOrderFormRepo.cs" />
     <Compile Include="DAL\IOrderRepo.cs" />
+    <Compile Include="DAL\OrderFormRepo.cs" />
     <Compile Include="DAL\OrderRepo.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
@@ -292,6 +295,22 @@
     <Compile Include="Migrations\201706092124257_newthing.Designer.cs">
       <DependentUpon>201706092124257_newthing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706101612302_orderThingy.cs" />
+    <Compile Include="Migrations\201706101612302_orderThingy.Designer.cs">
+      <DependentUpon>201706101612302_orderThingy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706101623049_fixedordermodel.cs" />
+    <Compile Include="Migrations\201706101623049_fixedordermodel.Designer.cs">
+      <DependentUpon>201706101623049_fixedordermodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706121857319_new Order form.cs" />
+    <Compile Include="Migrations\201706121857319_new Order form.Designer.cs">
+      <DependentUpon>201706121857319_new Order form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706122318248_reworkingDatabase.cs" />
+    <Compile Include="Migrations\201706122318248_reworkingDatabase.Designer.cs">
+      <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -300,6 +319,7 @@
     <Compile Include="Models\Design.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -307,8 +327,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controllers\apparelController.js" />
+    <Content Include="app\controllers\customerController.js" />
+    <Content Include="app\controllers\designController.js" />
+    <Content Include="app\controllers\homeController.js" />
     <Content Include="app\controllers\orderFormController.js" />
     <Content Include="app\controllers\ordersController.js" />
+    <Content Include="app\partials\apparel.html" />
+    <Content Include="app\partials\customer.html" />
+    <Content Include="app\partials\design.html" />
+    <Content Include="app\partials\home.html" />
     <Content Include="app\partials\orders.html" />
     <Content Include="app\partials\orderform.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -393,6 +421,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706092124257_newthing.resx">
       <DependentUpon>201706092124257_newthing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706101612302_orderThingy.resx">
+      <DependentUpon>201706101612302_orderThingy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706101623049_fixedordermodel.resx">
+      <DependentUpon>201706101623049_fixedordermodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706121857319_new Order form.resx">
+      <DependentUpon>201706121857319_new Order form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706122318248_reworkingDatabase.resx">
+      <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

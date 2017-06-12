@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace SilkScreenOrder.DAL
 {
-    public interface IApparelRepo
+    public interface IOrderFormRepo
     {
-        IEnumerable<Apparel> GetApparel();
-        void AddApparel(Apparel apparel);
-        Apparel DeleteApparel(int apparelId);
+        IEnumerable<OrderForm> GetOrderForms();
+
+        void AddOrderForm(OrderForm newOrderForm);
+
+        OrderForm DeleteOrder(int orderFormId);
     }
 }

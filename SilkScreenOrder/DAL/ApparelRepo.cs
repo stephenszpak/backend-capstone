@@ -22,6 +22,11 @@ namespace SilkScreenOrder.DAL
             _context.SaveChanges();
         }
 
+        public Apparel DeleteApparel(int apparelId)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Apparel> GetApparel()
         {
             return _context.Apparel;

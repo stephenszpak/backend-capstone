@@ -11,14 +11,14 @@ namespace SilkScreenOrder.Models
         [Key]
         public int OrderId { get; set; }
 
-        public DateTime OrderDate { get; set; }
-
-        public DateTime DueDate { get; set; }
-
         public virtual Customer customer { get; set; }
+
+        public virtual Design design { get; set; }
 
         public virtual Apparel apparel { get; set; }
 
-        public virtual Design design { get; set; }
+        public DateTime OrderDate { get; set; }
+
+        public DateTime DueDate { get; set; }
     }
 }

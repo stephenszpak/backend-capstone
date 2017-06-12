@@ -2,6 +2,10 @@
 
 app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
+        .when("/", {
+            templateUrl: "app/partials/home.html",
+            controller: "homeController"
+        })
         .when("/orders", {
             templateUrl: "app/partials/orders.html",
             controller: "ordersController"
@@ -10,9 +14,17 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "app/partials/orderform.html",
             controller: "orderFormController"
         })
-        //.when("/order/details/:id", {
-        //    templateUrl: "app/partials/details.html",
-        //    controller: "detailController"
-        //})
+        .when("/design", {
+            templateUrl: "app/partials/design.html",
+            controller: "designController"
+        })
+        .when("/apparel", {
+            templateUrl: "app/partials/apparel.html",
+            controller: "apparelController"
+        })
+        .when("/customer", {
+            templateUrl: "app/partials/customer.html",
+            controller: "customerController"
+        })
     }
 ])

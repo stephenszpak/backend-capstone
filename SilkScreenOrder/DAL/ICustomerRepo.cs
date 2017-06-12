@@ -14,5 +14,7 @@ namespace SilkScreenOrder.DAL
         IEnumerable<Customer> GetCustomers();
 
         void AddCustomer(Customer customer);
+
+        Customer DeleteCustomer(int customerId);
     }
 }

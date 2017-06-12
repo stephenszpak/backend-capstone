@@ -2,12 +2,26 @@
 
 <ul>
     <li ng-repeat="order in orderlist">
-        <strong>Order Date:</strong>{{order.OrderDate | date:'MM/dd/yy'}}
-        <strong>Order Due Date:</strong> {{order.DueDate}} <br /> 
-        <strong>Customer Name: </strong> {{order.CustomerName}} <br />
-        <strong>Customer Address: </strong> {{order.CustomerAddress}} <br />
-        <strong>Number of Colors: </strong> {{order.NumberOfColors}} <br />
-        <strong>Design Fee: </strong> {{order.DesignFee}} <br />
+        <strong>Order Date:</strong>{{order.OrderDate | date:'MM/dd/yy'}} <br />
+        <strong>Order Due Date:</strong> {{order.OrderDueDate | date:'MM/dd/yy'}} <br />
+        {{order.SalesPerson}}<br />
+        {{order.CustomerName}} <br />
+        {{order.CustomerAddress}}<br />
+        {{order.ApparelType}}<br />
+        {{order.ApparelBrand}}<br />
+        {{order.ApparelQuantity}}<br />
+        {{order.ApparelPricePerPiece}}<br />
+        {{order.ApparelColor}}<br />
+        {{order.AmountOfColorsOfDesign}}<br />
+        {{order.DesignHeight}}<br />
+        {{order.DesignWidth}}<br />
+        {{order.LogoLocations}}<br />
+        {{order.DesignFee}}<br />
+        {{order.InkColorsToBeUsed}}<br />
+
+        {{order.TotalPrice}}<br />
+        {{order.AdditionalNotesToPrinter}}<br />
+
 
     </li>
 </ul>
@@ -15,3 +29,4 @@
 
 
 
+     

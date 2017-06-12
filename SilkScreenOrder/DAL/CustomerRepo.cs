@@ -21,6 +21,11 @@ namespace SilkScreenOrder.DAL
             _context.SaveChanges();
         }
 
+        public Customer DeleteCustomer(int customerId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Customer GetCustomerById(int customerId)
         {
             throw new NotImplementedException();

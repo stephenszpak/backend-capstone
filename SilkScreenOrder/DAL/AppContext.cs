@@ -18,5 +18,7 @@ namespace SilkScreenOrder.DAL
         public DbSet<Order> Orders { get; set; }
 
         public DbSet<Apparel> Apparel { get; set; }
+
+        public DbSet<OrderForm> OrderForms { get; set; }
     }
 }
