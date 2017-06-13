@@ -32,5 +32,13 @@ namespace SilkScreenOrder.Controllers
         {
             _orderFormRepo.AddOrderForm(newOrderForm);
         }
+
+        [Route("api/orderform/details/{OrderFormId}")]
+        [HttpGet]
+        public OrderForm GetSingleOrder(int orderformId)
+        {
+            var getSingleOrder = _orderFormRepo.GetSingleOrder(orderformId);
+            return getSingleOrder;
+        }
     }
 }

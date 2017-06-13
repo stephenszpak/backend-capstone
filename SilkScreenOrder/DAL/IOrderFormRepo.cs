@@ -14,5 +14,7 @@ namespace SilkScreenOrder.DAL
         void AddOrderForm(OrderForm newOrderForm);
 
         OrderForm DeleteOrder(int orderFormId);
+
+        OrderForm GetSingleOrder(int orderFormId);
     }
 }

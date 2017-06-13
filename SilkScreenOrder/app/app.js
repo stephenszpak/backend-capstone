@@ -10,6 +10,10 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "app/partials/orders.html",
             controller: "ordersController"
         })
+        .when("/orders/details/:id", {
+            templateUrl: "app/partials/orderdetails.html",
+            controller: "orderViewController"
+        })
         .when("/orderform", {
             templateUrl: "app/partials/orderform.html",
             controller: "orderFormController"

@@ -1,6 +1,10 @@
 ﻿<h1>OrderForm</h1>
 
 <div class="form-group">
+<label for="OrderNumber">Order Number</label>
+<input type="number" class="form-control" id="OrderNumber" placeholder="Order #" ng-model="newOrder.OrderNumber" />
+</div>
+<div class="form-group">
     <label for="OrderDate">Order Date</label>
     <input type="datetime" class="form-control" id="OrderDate" placeholder="Order Date" ng-model="newOrder.OrderDate" />
 </div>
@@ -13,10 +17,7 @@
     <input type="text" class="form-control" id="SalesPerson" placeholder="Seller" ng-model="newOrder.SalesPerson" />
 </div>
 
-
-
-
-<!--CustomerModel-->
+<!--Customer-->
 <h3>Customer Info</h3>
 <div class="form-group">
     <label for="CustomerName">Customer Name</label>
@@ -36,7 +37,7 @@
     <button class="btn-info" ng-click="submitCustomer(newOrder)">Submit Customer</button>
 </div>
 
-<!--DesignModel-->
+<!--Design-->
 <h3>Design info</h3>
 <div class="form-group">
     <label for="NumberOfColors">Number Of Colors</label>
@@ -65,8 +66,7 @@
     </div>
 
 
-
-<!--ApparelModel-->
+<!--Apparel-->
 <h3>Apparel Info</h3>
 <div class="form-group">
     <label for="ApparelType">Apparel Type</label>
@@ -90,7 +90,6 @@
 </div>
 
 <!--AdditonalInfo-->
-
 <div class="form-group">
     <label for="InkColorsToBeUsed">Color of Ink(s)</label>
     <input type="text" class="form-control" id="InkColorsToBeUsed" placeholder="Ink Color" ng-model="newOrder.InkColorsToBeUsed" />

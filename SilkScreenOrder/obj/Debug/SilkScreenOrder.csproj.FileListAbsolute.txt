@@ -106,3 +106,4 @@ C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScre
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.fixedordermodel.resources
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.newOrderform.resources
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.reworkingDatabase.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.updateorderformmodel.resources

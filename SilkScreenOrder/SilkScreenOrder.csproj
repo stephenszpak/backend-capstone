@@ -311,6 +311,10 @@
     <Compile Include="Migrations\201706122318248_reworkingDatabase.Designer.cs">
       <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706131948103_update orderform model.cs" />
+    <Compile Include="Migrations\201706131948103_update orderform model.Designer.cs">
+      <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -333,10 +337,12 @@
     <Content Include="app\controllers\homeController.js" />
     <Content Include="app\controllers\orderFormController.js" />
     <Content Include="app\controllers\ordersController.js" />
+    <Content Include="app\controllers\orderViewController.js" />
     <Content Include="app\partials\apparel.html" />
     <Content Include="app\partials\customer.html" />
     <Content Include="app\partials\design.html" />
     <Content Include="app\partials\home.html" />
+    <Content Include="app\partials\orderdetails.html" />
     <Content Include="app\partials\orders.html" />
     <Content Include="app\partials\orderform.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -433,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706122318248_reworkingDatabase.resx">
       <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706131948103_update orderform model.resx">
+      <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

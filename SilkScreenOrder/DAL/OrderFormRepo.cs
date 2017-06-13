@@ -21,9 +21,19 @@ namespace SilkScreenOrder.DAL
             _context.SaveChanges();
         }
 
+        public OrderForm DeleteOrder(int orderFormId)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<OrderForm> GetOrderForms()
         {
             return _context.OrderForms;
+        }
+
+        public OrderForm GetSingleOrder(int orderFormId)
+        {
+            return _context.OrderForms.Where(x => x.OrderFormId == orderFormId).FirstOrDefault();
         }
     }
 }

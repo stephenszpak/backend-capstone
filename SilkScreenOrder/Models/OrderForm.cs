@@ -15,6 +15,8 @@ namespace SilkScreenOrder.Models
 
         public DateTime OrderDueDate { get; set; }
 
+        public int OrderNumber { get; set; }
+
         public string SalesPerson { get; set; }
 
         public string CustomerName { get; set; }
