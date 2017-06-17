@@ -12,11 +12,11 @@ namespace SilkScreenOrder.Controllers
     public class OrderFormController : ApiController
     {
         readonly IOrderFormRepo _orderFormRepo;
-        readonly IDesignRepo _designRepo;
-        readonly IApparelRepo _apparelRepo;
-        readonly ICustomerRepo _customerRepo;
+        //readonly IDesignRepo _designRepo;
+        //readonly IApparelRepo _apparelRepo;
+        //readonly ICustomerRepo _customerRepo;
 
-        public OrderFormController(IOrderFormRepo orderFormRepo)
+        public OrderFormController(IOrderFormRepo orderFormRepo,IApparelRepo apparelRepo, IDesignRepo designRepo,ICustomerRepo customerRepo)
         {
             _orderFormRepo = orderFormRepo;
         }
@@ -31,9 +31,49 @@ namespace SilkScreenOrder.Controllers
             
         [Route("api/orderform")]
         [HttpPost]
-        public void AddOrderForm(OrderForm newOrderForm)
+        public void AddOrderForm(AddOrderViewModel newOrderForm)
         {
-            _orderFormRepo.AddOrderForm(newOrderForm);
+            var newCustomer = new Customer {
+                CustomerPhone = newOrderForm.CustomerPhone,
+                CustomerEmail = newOrderForm.CustomerEmail,
+                CustomerAddress = newOrderForm.CustomerAddress,
+                CustomerName = newOrderForm.CustomerName
+                
+            };
+            var newDesign = new Design {
+                DesignFee = newOrderForm.DesignFee,
+                DesignHeight = newOrderForm.DesignHeight,
+                DesignWidth = newOrderForm.DesignWidth,
+                AmountOfColorsOfDesign = newOrderForm.AmountOfColorsOfDesign,
+                InkColorsToBeUsed = newOrderForm.InkColorsToBeUsed,
+                LogoLocations = newOrderForm.LogoLocations
+            };
+            var newApparel = new Apparel {
+                ApparelBrand = newOrderForm.ApparelBrand,
+                ApparelColor = newOrderForm.ApparelColor,
+                ApparelPricePerPiece = newOrderForm.ApparelPricePerPiece,
+                ApparelQuantity = newOrderForm.ApparelQuantity,
+                ApparelType = newOrderForm.ApparelType
+            };
+
+            var order = new OrderForm
+            {
+                Customer = newCustomer,
+                Design = newDesign,
+                Apparel = newApparel,
+                AdditionalNotes = newOrderForm.AdditionalNotes,
+                OrderDate = newOrderForm.OrderDate,
+                OrderDueDate = newOrderForm.OrderDueDate,
+                OrderNumber = newOrderForm.OrderNumber,
+                SalesPerson = newOrderForm.SalesPerson,
+                TotalPrice = newOrderForm.TotalPrice
+            };
+
+            //_designRepo.AddDesign(newDesign);
+            //_apparelRepo.AddApparel(newApparel);
+            //_customerRepo.AddCustomer(newCustomer);
+            _orderFormRepo.AddOrderForm(order);
+
         }
 
         [Route("api/orderform/details/{OrderFormId}")]

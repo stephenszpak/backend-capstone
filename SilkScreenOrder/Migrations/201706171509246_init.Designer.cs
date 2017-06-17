@@ -7,13 +7,13 @@ namespace SilkScreenOrder.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class updatedmodelschemapart5 : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(updatedmodelschemapart5));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706171430489_updated model schema part 5"; }
+            get { return "201706171509246_init"; }
         }
         
         string IMigrationMetadata.Source

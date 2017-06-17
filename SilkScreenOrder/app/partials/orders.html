@@ -3,6 +3,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default glyphicon-search"></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
+                    </div>
+                </div>
+            </div>
+            <br />
             <div class="table-responsive">
                 <table class="table table-bordered ">
                     <thead>
@@ -14,7 +25,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="order in orderlist">
+                        <tr ng-repeat="order in orderlist | filter: searchText">
                             <td><a href="/#!/orderdetail/{{order.OrderFormId}}">{{order.OrderNumber}}</a></td>
                             <td>{{order.SalesPerson}}</td>
                             <td>{{order.CustomerName}}</td>

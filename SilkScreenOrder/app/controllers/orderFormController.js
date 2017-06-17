@@ -2,7 +2,7 @@
 
     $scope.newOrder = {};
 
-    $scope.submitOrder = function (order) {
+    $scope.submitOrder = function (order) {  
         $http.post('api/orderform', order)
             .then(function (result) {
                 console.log(result);
@@ -25,11 +25,7 @@
     };
 
     $scope.submitApparel = function (apparel) {
-        $http.post('api/apparel', apparel)
-            .then(function (result) {
-                console.log("appare;", result);
-                $location('design');
-            });
+        
     };
 
 }]);

@@ -22,9 +22,5 @@ namespace SilkScreenOrder.Models
         public string LogoLocations { get; set; }
 
         public string InkColorsToBeUsed { get; set; }
-
-        [Required]
-        public virtual OrderForm orderform { get; set; }
-
     }
 }

@@ -17,10 +17,10 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h4>Customer</h4>
-                    <p>Name: {{selectedOrder.CustomerName}}</p>
-                    <p>Address: {{selectedOrder.CustomerAddress}}</p>
-                    <p>Phone: {{selectedOrder.CustomerPhone}}</p>
-                    <p>E-Mail: {{selectedOrder.CustomerEmail}}</p>
+                    <p>Name: {{selectedOrder.Customer.CustomerName}}</p>
+                    <p>Address: {{selectedOrder.Customer.CustomerAddress}}</p>
+                    <p>Phone: {{selectedOrder.Customer.CustomerPhone}}</p>
+                    <p>E-Mail: {{selectedOrder.Customer.CustomerEmail}}</p>
 
                 </div>
             </div>
@@ -28,17 +28,17 @@
                
 
                 
-                {{selectedOrder.ApparelType}}<br />
-                {{selectedOrder.ApparelBrand}}<br />
-                {{selectedOrder.ApparelQuantity}}<br />
-                {{selectedOrder.ApparelPricePerPiece}}<br />
-                {{selectedOrder.ApparelColor}}<br />
-                {{selectedOrder.AmountOfColorsOfDesign}}<br />
-                {{selectedOrder.DesignHeight}}<br />
-                {{selectedOrder.DesignWidth}}<br />
-                {{selectedOrder.LogoLocations}}<br />
-                {{selectedOrder.DesignFee}}<br />
-                {{selectedOrder.InkColorsToBeUsed}}<br />
+                {{selectedOrder.Apparel.ApparelType}}<br />
+                {{selectedOrder.Apparel.ApparelBrand}}<br />
+                {{selectedOrder.Apparel.ApparelQuantity}}<br />
+                {{selectedOrder.Apparel.ApparelPricePerPiece}}<br />
+                {{selectedOrder.Apparel.ApparelColor}}<br />
+                {{selectedOrder.Design.AmountOfColorsOfDesign}}<br />
+                {{selectedOrder.Design.DesignHeight}}<br />
+                {{selectedOrder.Design.DesignWidth}}<br />
+                {{selectedOrder.Design.LogoLocations}}<br />
+                {{selectedOrder.Design.DesignFee}}<br />
+                {{selectedOrder.Design.InkColorsToBeUsed}}<br />
 
                 {{selectedOrder.TotalPrice}}<br />
                 {{selectedOrder.AdditionalNotesToPrinter}}<br />

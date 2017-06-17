@@ -18,12 +18,7 @@ namespace SilkScreenOrder.DAL
 
         public void AddOrderForm(OrderForm newOrderForm)
         {
-            
             _context.OrderForms.Add(newOrderForm);
-            //_context.OrderForms.Add(newDesign);
-            //_context.OrderForms.Add(newApparel);
-            //_context.OrderForms.Add(newCustomer);
-
             _context.SaveChanges();
         }
 

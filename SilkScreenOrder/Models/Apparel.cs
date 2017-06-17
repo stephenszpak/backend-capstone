@@ -21,7 +21,5 @@ namespace SilkScreenOrder.Models
 
         public string ApparelColor { get; set; }
 
-        [Required]
-        public virtual OrderForm orderform { get; set; }
     }
 }
