@@ -81,6 +81,18 @@
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="StructureMap, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\structuremap.3.0.0.108\lib\net40\StructureMap.dll</HintPath>
       <Private>True</Private>
@@ -260,7 +272,6 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\DesignController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\OrderFormController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAL\ApparelRepo.cs" />
@@ -271,9 +282,7 @@
     <Compile Include="DAL\ICustomerRepo.cs" />
     <Compile Include="DAL\IDesignRepo.cs" />
     <Compile Include="DAL\IOrderFormRepo.cs" />
-    <Compile Include="DAL\IOrderRepo.cs" />
     <Compile Include="DAL\OrderFormRepo.cs" />
-    <Compile Include="DAL\OrderRepo.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -315,6 +324,30 @@
     <Compile Include="Migrations\201706131948103_update orderform model.Designer.cs">
       <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706132258062_deleted order model.cs" />
+    <Compile Include="Migrations\201706132258062_deleted order model.Designer.cs">
+      <DependentUpon>201706132258062_deleted order model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706162242546_updated model scheme.cs" />
+    <Compile Include="Migrations\201706162242546_updated model scheme.Designer.cs">
+      <DependentUpon>201706162242546_updated model scheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706162302337_updated model scheme part 2.cs" />
+    <Compile Include="Migrations\201706162302337_updated model scheme part 2.Designer.cs">
+      <DependentUpon>201706162302337_updated model scheme part 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706162321004_updated model scheme part 3.cs" />
+    <Compile Include="Migrations\201706162321004_updated model scheme part 3.Designer.cs">
+      <DependentUpon>201706162321004_updated model scheme part 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706171419215_updated model schema part 4.cs" />
+    <Compile Include="Migrations\201706171419215_updated model schema part 4.Designer.cs">
+      <DependentUpon>201706171419215_updated model schema part 4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706171430489_updated model schema part 5.cs" />
+    <Compile Include="Migrations\201706171430489_updated model schema part 5.Designer.cs">
+      <DependentUpon>201706171430489_updated model schema part 5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -322,7 +355,6 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Design.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -348,6 +380,7 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -401,7 +434,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -442,6 +474,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706131948103_update orderform model.resx">
       <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132258062_deleted order model.resx">
+      <DependentUpon>201706132258062_deleted order model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162242546_updated model scheme.resx">
+      <DependentUpon>201706162242546_updated model scheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162302337_updated model scheme part 2.resx">
+      <DependentUpon>201706162302337_updated model scheme part 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162321004_updated model scheme part 3.resx">
+      <DependentUpon>201706162321004_updated model scheme part 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171419215_updated model schema part 4.resx">
+      <DependentUpon>201706171419215_updated model schema part 4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171430489_updated model schema part 5.resx">
+      <DependentUpon>201706171430489_updated model schema part 5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

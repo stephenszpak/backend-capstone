@@ -4,7 +4,7 @@
 
     $http.get('api/design')
     .then(function (result) {
-        console.log("just api/customer", result);
+        console.log("just api/design", result);
         $scope.designlist = result.data;
     });
 

@@ -20,5 +20,8 @@ namespace SilkScreenOrder.Models
         public decimal ApparelPricePerPiece { get; set; }
 
         public string ApparelColor { get; set; }
+
+        [Required]
+        public virtual OrderForm orderform { get; set; }
     }
 }

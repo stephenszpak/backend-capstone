@@ -18,12 +18,13 @@ namespace SilkScreenOrder.Controllers
             _designRepo = designRepo;
         }
 
-        //[Route("api/design")]
-        //[HttpGet]
-        //public GetDesignById(Design designId)
-        //{
-
-        //}
+        [Route("api/design/{DesignId}")]
+        [HttpDelete]
+        public Design DeleteDesign(int designId)
+        {
+            var deleteDesign = _designRepo.DeleteDesign(designId);
+            return deleteDesign;
+        }
 
         [Route("api/design")]
         [HttpGet]

@@ -1,109 +1,141 @@
 ﻿<h1>OrderForm</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="OrderNumber">Order Number</label>
+                <input type="number" class="form-control" id="OrderNumber" placeholder="Order #" ng-model="newOrder.OrderNumber" />
+            </div>
+            <div class="form-group">
+                <label for="OrderDate">Order Date</label>
+                <input type="datetime" class="form-control" id="OrderDate" placeholder="Order Date" ng-model="newOrder.OrderDate" />
+            </div>
+            <div class="form-group">
+                <label for="OrderDate">Due Date</label>
+                <input type="datetime" class="form-control" id="OrderDate" placeholder="Due Date" ng-model="newOrder.OrderDueDate" />
+            </div>
+            <div class="form-group">
+                <label for="SalesPerson">Sales Person</label>
+                <input type="text" class="form-control" id="SalesPerson" placeholder="Sales Person" ng-model="newOrder.SalesPerson" />
+            </div>
+        </div>
 
-<div class="form-group">
-<label for="OrderNumber">Order Number</label>
-<input type="number" class="form-control" id="OrderNumber" placeholder="Order #" ng-model="newOrder.OrderNumber" />
-</div>
-<div class="form-group">
-    <label for="OrderDate">Order Date</label>
-    <input type="datetime" class="form-control" id="OrderDate" placeholder="Order Date" ng-model="newOrder.OrderDate" />
-</div>
-<div class="form-group">
-    <label for="OrderDate">Due Date</label>
-    <input type="datetime" class="form-control" id="OrderDate" placeholder="Due Date" ng-model="newOrder.OrderDueDate" />
-</div>
-<div class="form-group">
-    <label for="SalesPerson">Sales Person</label>
-    <input type="text" class="form-control" id="SalesPerson" placeholder="Seller" ng-model="newOrder.SalesPerson" />
-</div>
+        <!--Customer-->
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="CustomerName">Customer Name</label>
+                <input type="text" class="form-control" id="CustomerName" placeholder="Customer Name" ng-model="newOrder.CustomerName" />
+            </div>
+            <div class="form-group">
+                <label for="CustomerAddress">Customer Address</label>
+                <input type="text" class="form-control" id="CustomerName" placeholder="Customer Address" ng-model="newOrder.CustomerAddress" />
+            </div>
+            <div class="form-group">
+                <label for="CustomerPhone">Customer Phone Number</label>
+                <input type="number" class="form-control" id="CustomerPhone" placeholder="Customer Phone" ng-model="newOrder.CustomerPhone" />
+            </div>
+            <div class="form-group">
+                <label for="CustomerEmail">Customer E-Mail</label>
+                <input type="email" class="form-control" id="CustomerPhone" placeholder="Customer E-Mail" ng-model="newOrder.CustomerEmail" />
+            </div>
+            <!--<div>
+                <button class="btn-info" ng-click="submitCustomer(newOrder)">
+                    Submit Customer
+                </button>
+            </div>-->
+        </div>
+    </div> <!-- end of row -->
 
-<!--Customer-->
-<h3>Customer Info</h3>
-<div class="form-group">
-    <label for="CustomerName">Customer Name</label>
-    <input type="text" class="form-control" id="CustomerName" placeholder="Customer Name" ng-model="newOrder.CustomerName" />
-</div>
-<div class="form-group">
-    <label for="CustomerAddress">Customer Address</label>
-    <input type="text" class="form-control" id="CustomerName" placeholder="Customer Address" ng-model="newOrder.CustomerAddress" />
-</div>
-<div class="form-group">
-<label for="CustomerPhone">Customer Phone Number</label>
-<input type="text" class="form-control" id="CustomerPhone" placeholder="Customer Phone" ng-model="newOrder.CustomerPhone" />
-</div>
+    <br />
+    <br />
 
-<div>
-    <h3>if this is a new customer click here</h3>
-    <button class="btn-info" ng-click="submitCustomer(newOrder)">Submit Customer</button>
-</div>
+    <!--Design-->
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="NumberOfColors">Number Of Colors</label>
+                <input type="number" class="form-control" id="NumberOfColors" placeholder="Number Of Colors" ng-model="newOrder.AmountOfColorsOfDesign" />
+            </div>
+            <div class="form-group">
+                <label for="DesignWidth">Design Width</label>
+                <input type="number" class="form-control" id="DesighWidth" placeholder="Design Width" ng-model="newOrder.DesignWidth" />
+            </div>
+            <div class="form-group">
+                <label for="DesignHeight">Height of Design</label>
+                <input type="number" class="form-control" id="DesignHeight" placeholder="Design Height" ng-model="newOrder.DesignHeight" />
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="LogoLocations">Locations of Logo</label>
+                <input type="text" class="form-control" id="LogoLocations" placeholder="Locations Of Logo" ng-model="newOrder.LogoLocations" />
+            </div>
+            <div class="form-group">
+                <label for="InkColorsToBeUsed">Color of Ink(s)</label>
+                <input type="text" class="form-control" id="InkColorsToBeUsed" placeholder="Ink Color" ng-model="newOrder.InkColorsToBeUsed" />
+            </div>
+        </div>
+        <!--<button class="btn-info" ng-click="submitDesign(newOrder)">Submit Design</button>-->
+    </div> <!-- end of row -->
 
-<!--Design-->
-<h3>Design info</h3>
-<div class="form-group">
-    <label for="NumberOfColors">Number Of Colors</label>
-    <input type="number" class="form-control" id="NumberOfColors" placeholder="Number Of Colors" ng-model="newOrder.AmountOfColorsOfDesign" />
-</div>
-<div class="form-group">
-    <label for="DesignFee">Design Fee</label>
-    <input type="text" class="form-control" id="DesignFee" placeholder="Design Fee" ng-model="newOrder.DesignFee" />
-</div>
-<div class="form-group">
-    <label for="DesignHeight">Height of Design</label>
-    <input type="number" class="form-control" id="DesignHeight" placeholder="Design Height" ng-model="newOrder.DesignHeight" />
-</div>
-<div class="form-group">
-    <label for="DesignWidth">Design Fee</label>
-    <input type="number" class="form-control" id="DesighWidth" placeholder="Design Width" ng-model="newOrder.DesignWidth" />
-</div>
-<div class="form-group">
-    <label for="LogoLocations">Locations of Logo</label>
-    <input type="text" class="form-control" id="LogoLocations" placeholder="Locations Of Logo" ng-model="newOrder.LogoLocations" />
-</div>
+    <br />
+    <br />
 
-<div>
-<h3>if this is a new design click here to submit to database</h3>
-<button class="btn-info" ng-click="submitDesign(newOrder)">Submit Design</button>
-    </div>
+    <!--Apparel-->
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ApparelType">Apparel Type</label>
+                <input type="text" class="form-control" id="ApparelType" placeholder="Garment Type" ng-model="newOrder.ApparelType" />
+            </div>
+            <div class="form-group">
+                <label for="ApparelBrand">Brand</label>
+                <input type="text" class="form-control" id="ApparelBrand" placeholder="Garment Brand" ng-model="newOrder.ApparelBrand" />
+            </div>
+            <div class="form-group">
+                <label for="ApparelQuantity">Quantity</label>
+                <input type="number" class="form-control" id="ApparelQuantity" placeholder="Quantity" ng-model="newOrder.ApparelQuantity" />
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ApparelColor">Garment Color</label>
+                <input type="text" class="form-control" id="ApparelColor" placeholder="Garment Color" ng-model="newOrder.ApparelColor" />
+            </div>
+            <div class="form-group">
+                <label for="ApparelPricePerPiece">Price Per Garment</label>
+                <input type="number" class="form-control" id="ApparelPricePerPiece" placeholder="Price per Garment" ng-model="newOrder.ApparelPricePerPiece" />
+            </div>
+        </div>
+    </div> <!-- end of row -->
 
+    
+    <!-- Fees -->
+    <div class="row">
+        <div class="col-md-5">
+            <!-- Design Fee -->
+            <div class="form-group">
+                <label for="DesignFee">Design Fee</label>
+                <input type="text" class="form-control" id="DesignFee" placeholder="Design Fee" ng-model="newOrder.DesignFee" />
+            </div>
+            <!-- Total Price-->
+            <div class="form-group">
+                <label for="TotalPrice">Total Price</label>
+                <input type="number" class="form-control" id="TotalPrice" placeholder="Total Price" ng-model="newOrder.TotalPrice" />
+            </div>
+        </div>
+    </div> <!-- end of row -->
 
-<!--Apparel-->
-<h3>Apparel Info</h3>
-<div class="form-group">
-    <label for="ApparelType">Apparel Type</label>
-    <input type="text" class="form-control" id="ApparelType" placeholder="Apparel Type" ng-model="newOrder.ApparelType" />
-</div>
-<div class="form-group">
-    <label for="ApparelBrand">Brand</label>
-    <input type="text" class="form-control" id="ApparelBrand" placeholder="Apparel Brand" ng-model="newOrder.ApparelBrand" />
-</div>
-<div class="form-group">
-    <label for="ApparelQuantity">Quantity</label>
-    <input type="number" class="form-control" id="ApparelQuantity" placeholder="Quantity" ng-model="newOrder.ApparelQuantity" />
-</div>
-<div class="form-group">
-    <label for="ApparelPricePerPiece">Price Per Piece</label>
-    <input type="number" class="form-control" id="ApparelPricePerPiece" placeholder="Price per piece" ng-model="newOrder.ApparelPricePerPiece" />
-</div>
-<div class="form-group">
-    <label for="ApparelColor">Apparel Color</label>
-    <input type="text" class="form-control" id="ApparelColor" placeholder="Price per piece" ng-model="newOrder.ApparelColor" />
-</div>
-
-<!--AdditonalInfo-->
-<div class="form-group">
-    <label for="InkColorsToBeUsed">Color of Ink(s)</label>
-    <input type="text" class="form-control" id="InkColorsToBeUsed" placeholder="Ink Color" ng-model="newOrder.InkColorsToBeUsed" />
-</div>
-
-<div class="form-group">
-    <label for="AdditionalNotes">Additional Notes</label>
-    <textarea ng-model="newOrder.AdditionalNotes"></textarea>
-</div>
-
-<div class="form-group">
-    <label for="TotalPrice">Total Price</label>
-    <input type="number" class="form-control" id="TotalPrice" placeholder="Total Price" ng-model="newOrder.TotalPrice" />
-</div>
+    <!--AdditonalInfo-->
+    <div class="row">
+        <div class="form-group">
+            <label for="AdditionalNotes">Additional Notes</label>
+            <textarea ng-model="newOrder.AdditionalNotes"></textarea>
+        </div>
+    </div> <!-- end of row -->
 
 
-<button class="btn-danger" ng-click="submitOrder(newOrder)">Submit Order</button>
+
+    <button class="btn-danger" ng-click="submitOrder(newOrder)">Submit Order</button>
+
+</div>

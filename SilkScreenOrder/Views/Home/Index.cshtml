@@ -9,7 +9,7 @@
 
 </head>
 <body ng-app="SilkScreen">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,17 +21,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/#!/orders">Orders</a></li>
-                    <li><a href="/#!/orderform">Order Form</a></li>
-                    <li><a href="/#!/customer">Customer List</a></li>
+                   
 
                 </ul>
             </div>
         </div>
-    </div>
-    ``
+    </div>*@
 
-    <div class="container body-content">
+    @*<div class="container body-content">
 
         <div ng-view>
 
@@ -42,6 +39,48 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
+    </div>*@
+
+    <div class="row">
+     
+        <div class="side-menu">
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <div class="brand-wrapper">
+                        <!-- Hamburger -->
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Brand -->
+                        <div class="brand-name-wrapper">
+                            <a class="navbar-brand" href="#">
+                                Screen.Print.Dash
+                            </a>
+                        </div>
+                <!-- Main Menu -->
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/#!/orders">Orders</a></li>
+                        <li><a href="/#!/orderform">Order Form</a></li>
+                        <li><a href="/#!/customer">Customer List</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+        </div>
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="side-body">
+                <div ng-view>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

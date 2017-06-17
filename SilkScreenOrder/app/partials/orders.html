@@ -1,32 +1,4 @@
-﻿<div><h2>YOU WIN</h2></div>
-
-<!--<ul>
-    <li ng-repeat="order in orderlist">
-        <strong>Order Date:</strong>{{order.OrderDate | date:'MM/dd/yy'}} <br />
-        <strong>Order Due Date:</strong> {{order.OrderDueDate | date:'MM/dd/yy'}} <br />
-        {{order.SalesPerson}}<br />
-        
-        {{order.CustomerName}} <br />
-        {{order.CustomerAddress}}<br />
-        {{order.ApparelType}}<br />
-        {{order.ApparelBrand}}<br />
-        {{order.ApparelQuantity}}<br />
-        {{order.ApparelPricePerPiece}}<br />
-        {{order.ApparelColor}}<br />
-        {{order.AmountOfColorsOfDesign}}<br />
-        {{order.DesignHeight}}<br />
-        {{order.DesignWidth}}<br />
-        {{order.LogoLocations}}<br />
-        {{order.DesignFee}}<br />
-        {{order.InkColorsToBeUsed}}<br />
-
-        {{order.TotalPrice}}<br />
-        {{order.AdditionalNotesToPrinter}}<br />
-
-
-    </li>
-</ul>-->
-
+﻿<h1>ORDERS</h1>
 
 <div class="container">
     <div class="row">
@@ -43,7 +15,7 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="order in orderlist">
-                            <td><a href="#!/orders/details/{{order.OrderFormId}}">{{order.OrderNumber}}</a></td>
+                            <td><a href="/#!/orderdetail/{{order.OrderFormId}}">{{order.OrderNumber}}</a></td>
                             <td>{{order.SalesPerson}}</td>
                             <td>{{order.CustomerName}}</td>
                             <td>{{order.ApparelQuantity}}</td>

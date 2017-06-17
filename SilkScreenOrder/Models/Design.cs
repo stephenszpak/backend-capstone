@@ -20,5 +20,11 @@ namespace SilkScreenOrder.Models
         public decimal DesignFee { get; set; }
 
         public string LogoLocations { get; set; }
+
+        public string InkColorsToBeUsed { get; set; }
+
+        [Required]
+        public virtual OrderForm orderform { get; set; }
+
     }
 }

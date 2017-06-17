@@ -18,12 +18,14 @@ namespace SilkScreenOrder.Models
         public int OrderNumber { get; set; }
 
         public string SalesPerson { get; set; }
-
+    
         public string CustomerName { get; set; }
 
         public string CustomerAddress { get; set; }
 
         public int CustomerPhone { get; set; }
+
+        public string CustomerEmail { get; set; }
 
         public string ApparelType { get; set; }
 
@@ -50,6 +52,10 @@ namespace SilkScreenOrder.Models
         public string AdditionalNotes { get; set; }
 
         public decimal TotalPrice { get; set; }
+
+        public virtual Apparel Apparel { get; set; }
+        public virtual Design Design { get; set; }
+        public virtual Customer Customer { get; set; }
 
     }
 }

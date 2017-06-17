@@ -12,6 +12,9 @@ namespace SilkScreenOrder.Controllers
     public class OrderFormController : ApiController
     {
         readonly IOrderFormRepo _orderFormRepo;
+        readonly IDesignRepo _designRepo;
+        readonly IApparelRepo _apparelRepo;
+        readonly ICustomerRepo _customerRepo;
 
         public OrderFormController(IOrderFormRepo orderFormRepo)
         {
@@ -39,6 +42,14 @@ namespace SilkScreenOrder.Controllers
         {
             var getSingleOrder = _orderFormRepo.GetSingleOrder(orderformId);
             return getSingleOrder;
+        }
+
+        [Route("api/orderform/{OrderFormId}")]
+        [HttpDelete]
+        public OrderForm DeleteOrder(int orderFormId)
+        {
+            var deleteOrder = _orderFormRepo.DeleteOrder(orderFormId);
+            return deleteOrder;
         }
     }
 }

@@ -8,8 +8,4 @@
             console.log("just api/order", result);
             $scope.orderlist = result.data;
         });
-
-   
-        
-    
 }]);

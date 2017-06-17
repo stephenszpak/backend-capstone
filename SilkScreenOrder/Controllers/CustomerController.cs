@@ -32,5 +32,12 @@ namespace SilkScreenOrder.Controllers
         {
             _customerRepo.AddCustomer(newCustomer);
         }
+
+        [Route("api/customer/{CustomerId}")]
+        public Customer DeleteCustomer(int customerId)
+        {
+            var deleteCustomer = _customerRepo.DeleteCustomer(customerId);
+            return deleteCustomer;
+        }
     }
 }

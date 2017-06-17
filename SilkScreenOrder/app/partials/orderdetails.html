@@ -1,3 +1,52 @@
-﻿<p>{{selectedOrder.CustomerName}}</p>
-<p></p>
-<p></p>
+﻿<div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Order Details</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Order Date: {{selectedOrder.OrderDate | date:'MM/dd/yy'}}</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Due Date: {{selectedOrder.OrderDueDate | date:'MM/dd/yy'}}</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Sales Person: {{selectedOrder.SalesPerson}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Customer</h4>
+                    <p>Name: {{selectedOrder.CustomerName}}</p>
+                    <p>Address: {{selectedOrder.CustomerAddress}}</p>
+                    <p>Phone: {{selectedOrder.CustomerPhone}}</p>
+                    <p>E-Mail: {{selectedOrder.CustomerEmail}}</p>
+
+                </div>
+            </div>
+
+               
+
+                
+                {{selectedOrder.ApparelType}}<br />
+                {{selectedOrder.ApparelBrand}}<br />
+                {{selectedOrder.ApparelQuantity}}<br />
+                {{selectedOrder.ApparelPricePerPiece}}<br />
+                {{selectedOrder.ApparelColor}}<br />
+                {{selectedOrder.AmountOfColorsOfDesign}}<br />
+                {{selectedOrder.DesignHeight}}<br />
+                {{selectedOrder.DesignWidth}}<br />
+                {{selectedOrder.LogoLocations}}<br />
+                {{selectedOrder.DesignFee}}<br />
+                {{selectedOrder.InkColorsToBeUsed}}<br />
+
+                {{selectedOrder.TotalPrice}}<br />
+                {{selectedOrder.AdditionalNotesToPrinter}}<br />
+
+
+        <div class="footer">
+            <button class="btn-primary" ng-click="backToOrders()">Back to Orders</button>
+            <button class="btn-danger glyphicon-minus-sign" ng-click="deleteOrder(OrderFormId)"></button>
+        </div>
+    </div>
+</div>
