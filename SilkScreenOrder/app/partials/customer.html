@@ -1,11 +1,16 @@
 ﻿<h1>Customers</h1>
 
-<ul>
-    <li ng-repeat="customer in customerlist">
-        {{customer.CustomerName}}
-        {{customer.CustomerAddress}}
-        {{customer.CustomerPhone}}
+<div class="container">
+    <div class="row">
+        <ul class="col-md-4 list-unstyled" ng-repeat="customer in customerlist">
+            <li>{{customer.CustomerName}}</li>
+            <li>{{customer.CustomerAddress}}</li>
+            <li>{{customer.CustomerPhone}}</li>
+            <button class="btn-danger" ng-click="deleteCustomer(customer.CustomerId)">DELETE</button>
+        </ul>
+    </div>
+</div>
+    
 
         
-    </li>
-</ul>
+   

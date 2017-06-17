@@ -23,7 +23,12 @@ namespace SilkScreenOrder.DAL
 
         public Customer DeleteCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            Customer customer = new Customer();
+            customer = _context.Customers.Find(customerId);
+
+            var deleteMe = _context.Customers.Remove(customer);
+            _context.SaveChanges();
+            return deleteMe;
         }
 
         public Customer GetCustomerById(int customerId)

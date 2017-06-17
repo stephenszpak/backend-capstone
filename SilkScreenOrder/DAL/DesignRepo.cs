@@ -23,11 +23,14 @@ namespace SilkScreenOrder.DAL
 
         public Design DeleteDesign(int designId)
         {
-            throw new NotImplementedException();
+            Design design = new Design();
+            design = _context.Designs.Find(designId);
+
+            var deleteMe = _context.Designs.Remove(design);
+            _context.SaveChanges();
+            return deleteMe;
         }
-
         
-
         public IQueryable<Design> GetDesignById(int designId)
         {
             return _context.Designs.Where(x => x.DesignId == designId);

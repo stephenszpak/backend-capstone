@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using SilkScreenOrder.Models;
+using System.Net;
 
 namespace SilkScreenOrder.DAL
 {
@@ -17,13 +18,23 @@ namespace SilkScreenOrder.DAL
 
         public void AddOrderForm(OrderForm newOrderForm)
         {
+            
             _context.OrderForms.Add(newOrderForm);
+            //_context.OrderForms.Add(newDesign);
+            //_context.OrderForms.Add(newApparel);
+            //_context.OrderForms.Add(newCustomer);
+
             _context.SaveChanges();
         }
 
         public OrderForm DeleteOrder(int orderFormId)
         {
-            throw new NotImplementedException();
+            OrderForm form = new OrderForm();
+            form = _context.OrderForms.Find(orderFormId);
+           
+            var deleteMe = _context.OrderForms.Remove(form);
+            _context.SaveChanges();
+            return deleteMe;
         }
 
         public IEnumerable<OrderForm> GetOrderForms()
