@@ -12,16 +12,16 @@
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: darkslategrey;
+  background-color: steelblue;
   border-right: 1px solid #e7e7e7;
+  font: white;
 }
 .side-menu .navbar {
   border: none;
-  background-color: darkslategrey;
+  background-color: steelblue;
 }
 .side-menu .navbar-header {
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
 }
 .side-menu .navbar-nav .active a {
   background-color: transparent;
@@ -31,8 +31,7 @@
 .side-menu .navbar-nav li {
   display: block;
   width: 100%;
-  border-bottom: 1px solid;
- 
+   color: white;
 }
 .side-menu .navbar-nav li a {
   padding: 15px;
@@ -230,6 +229,11 @@
 input,
 select{
     max-width: 280px;
+}
+
+textarea{
+    width: 500px;
+    height: 150px;
 }
 
 small-border{

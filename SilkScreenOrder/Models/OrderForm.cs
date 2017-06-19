@@ -21,6 +21,8 @@ namespace SilkScreenOrder.Models
 
         public string AdditionalNotes { get; set; }
 
+        public decimal PrintingFee { get; set; }
+
         public decimal TotalPrice { get; set; }
 
         public virtual Apparel Apparel { get; set; }

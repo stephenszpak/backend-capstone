@@ -21,28 +21,49 @@
                     <p>Address: {{selectedOrder.Customer.CustomerAddress}}</p>
                     <p>Phone: {{selectedOrder.Customer.CustomerPhone}}</p>
                     <p>E-Mail: {{selectedOrder.Customer.CustomerEmail}}</p>
-
                 </div>
             </div>
 
-               
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Design</h4>
+                    <p>Height: {{selectedOrder.Design.DesignHeight}}</p>
+                    <p>Width: {{selectedOrder.Design.DesignWidth}}</p>
+                    <p>Logo Location(s): {{selectedOrder.Design.LogoLocations}}</p>
+                    <p># of Colors: {{selectedOrder.Design.AmountOfColorsOfDesign}}</p>
+                    <p>Ink Color(s): {{selectedOrder.Design.InkColorsToBeUsed}}</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Garment</h4>
+                    <p>Type: {{selectedOrder.Apparel.ApparelType}}</p>
+                    <p>Brand: {{selectedOrder.Apparel.ApparelBrand}}</p>
+                    <p>Quantity: {{selectedOrder.Apparel.ApparelQuantity}}</p>
+                    <p>Color: {{selectedOrder.Apparel.ApparelColor}}</p>
+                    <p>Price per piece: {{selectedOrder.Apparel.ApparelPricePerPiece}}</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Fees</h4>
+                    <p>Printing Fee: {{selectedOrder.PrintingFee}}</p>
+                    <p>Design Fee: {{selectedOrder.Design.DesignFee}}</p>
+                    <p>Total: {{selectedOrder.TotalPrice}}</p>
+                    <h6>Printing fee is determined by the amount of colors in the design.  Each price is PER PIECE.</h6>
+                    <h6>$0.75 for 1-color, $1.00 for 2-color, $1.25 for 3-color, $1.50 for 4-color, $1.75 for 5-color</h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Additional Notes</h4>
+                    <p>{{selectedOrder.AdditionalNotesToPrinter}}</p>
+                </div>
+            </div>
                 
-                {{selectedOrder.Apparel.ApparelType}}<br />
-                {{selectedOrder.Apparel.ApparelBrand}}<br />
-                {{selectedOrder.Apparel.ApparelQuantity}}<br />
-                {{selectedOrder.Apparel.ApparelPricePerPiece}}<br />
-                {{selectedOrder.Apparel.ApparelColor}}<br />
-                {{selectedOrder.Design.AmountOfColorsOfDesign}}<br />
-                {{selectedOrder.Design.DesignHeight}}<br />
-                {{selectedOrder.Design.DesignWidth}}<br />
-                {{selectedOrder.Design.LogoLocations}}<br />
-                {{selectedOrder.Design.DesignFee}}<br />
-                {{selectedOrder.Design.InkColorsToBeUsed}}<br />
-
-                {{selectedOrder.TotalPrice}}<br />
-                {{selectedOrder.AdditionalNotesToPrinter}}<br />
-
 
         <div class="footer">
             <button class="btn-primary" ng-click="backToOrders()">Back to Orders</button>

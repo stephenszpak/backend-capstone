@@ -300,6 +300,14 @@
     <Compile Include="Migrations\201706171650273_modelview.Designer.cs">
       <DependentUpon>201706171650273_modelview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706181823158_added printing fee.cs" />
+    <Compile Include="Migrations\201706181823158_added printing fee.Designer.cs">
+      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706181846190_added max length to number of colors.cs" />
+    <Compile Include="Migrations\201706181846190_added max length to number of colors.Designer.cs">
+      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -409,6 +417,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706171650273_modelview.resx">
       <DependentUpon>201706171650273_modelview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706181823158_added printing fee.resx">
+      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706181846190_added max length to number of colors.resx">
+      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

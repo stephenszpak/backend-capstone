@@ -38,11 +38,6 @@
                 <label for="CustomerEmail">Customer E-Mail</label>
                 <input type="email" class="form-control" id="CustomerPhone" placeholder="Customer E-Mail" ng-model="newOrder.CustomerEmail" />
             </div>
-            <!--<div>
-                <button class="btn-info" ng-click="submitCustomer(newOrder)">
-                    Continue
-                </button>
-            </div>-->
         </div>
     </div> <!-- end of row -->
 
@@ -53,15 +48,15 @@
     <div class="row">
         <div class="col-md-5">
             <div class="form-group">
-                <label for="NumberOfColors">Number Of Colors</label>
-                <input type="number" class="form-control" id="NumberOfColors" placeholder="Number Of Colors" ng-model="newOrder.AmountOfColorsOfDesign" />
+                <label for="NumberOfColors">Number Of Colors(max of 4)</label>
+                <input type="text" class="form-control" id="NumberOfColors" placeholder="Number Of Colors" ng-model="newOrder.AmountOfColorsOfDesign" />
             </div>
             <div class="form-group">
-                <label for="DesignWidth">Design Width</label>
+                <label for="DesignWidth">Design Width (inches)</label>
                 <input type="number" class="form-control" id="DesighWidth" placeholder="Design Width" ng-model="newOrder.DesignWidth" />
             </div>
             <div class="form-group">
-                <label for="DesignHeight">Height of Design</label>
+                <label for="DesignHeight">Height of Design (inches)</label>
                 <input type="number" class="form-control" id="DesignHeight" placeholder="Design Height" ng-model="newOrder.DesignHeight" />
             </div>
         </div>
@@ -75,7 +70,6 @@
                 <input type="text" class="form-control" id="InkColorsToBeUsed" placeholder="Ink Color" ng-model="newOrder.InkColorsToBeUsed" />
             </div>
         </div>
-        <!--<button class="btn-info" ng-click="submitDesign(newOrder)">Continue</button>-->
     </div> <!-- end of row -->
 
     <br />
@@ -109,10 +103,17 @@
         </div>
     </div> <!-- end of row -->
 
+    <br />
+    <br />
     
     <!-- Fees -->
     <div class="row">
         <div class="col-md-5">
+            <!-- Printing Fee -->
+            <div class="form-group">
+                <label for="PrintingFee">Printing Fee</label>
+                <input type="text" class="form-control" id="Printing Fee" placeholder="Printing Fee" ng-model="newOrder.PrintingFee" />
+            </div>
             <!-- Design Fee -->
             <div class="form-group">
                 <label for="DesignFee">Design Fee</label>
@@ -124,17 +125,69 @@
                 <input type="number" class="form-control" id="TotalPrice" placeholder="Total Price" ng-model="newOrder.TotalPrice" />
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-bordered ">
+                    <label>Price List for Screen Printing</label>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Min</th>
+                            <th>10-50</th>
+                            <th>51-100</th>
+                            <th>101-150</th>
+                            <th>151+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1-Color</strong></td>
+                            <td>$35.00</td>
+                            <td>$2.25</td>
+                            <td>$1.70</td>
+                            <td>$1.50</td>
+                            <td>$1.25</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2-Color</strong></td>
+                            <td>$45.00</td>
+                            <td>$3.40</td>
+                            <td>$2.55</td>
+                            <td>$2.20</td>
+                            <td>$2.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3-Color</strong></td>
+                            <td>$60.00</td>
+                            <td>$5.00</td>
+                            <td>$3.70</td>
+                            <td>$3.20</td>
+                            <td>$2.85</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4-Color</strong></td>
+                            <td>$70.00</td>
+                            <td>$6.00</td>
+                            <td>$5.00</td>
+                            <td>$4.25</td>
+                            <td>$3.75</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div> <!-- end of row -->
+    
 
     <!--AdditonalInfo-->
     <div class="row">
-        <div class="form-group">
+        <div class="col-md-7">
             <label for="AdditionalNotes">Additional Notes</label>
-            <textarea ng-model="newOrder.AdditionalNotes"></textarea>
+            <div class="form-group">
+                <textarea ng-model="newOrder.AdditionalNotes"></textarea>
+            </div>
         </div>
     </div> <!-- end of row -->
-
-
 
     <button class="btn-danger" ng-click="submitOrder(newOrder)">Submit Order</button>
 

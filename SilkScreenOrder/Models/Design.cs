@@ -11,6 +11,7 @@ namespace SilkScreenOrder.Models
         [Key]
         public int DesignId { get; set; }
 
+        [MaxLength(5)]
         public string AmountOfColorsOfDesign { get; set; }
 
         public decimal DesignHeight { get; set; }

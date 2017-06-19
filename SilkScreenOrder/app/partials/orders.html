@@ -18,7 +18,7 @@
                 <table class="table table-bordered ">
                     <thead>
                         <tr>
-                            <th>OrderNumber</th>
+                            <th>Order Number</th>
                             <th>Sales Person</th>
                             <th>Customer</th>
                             <th>Quantity</th>
@@ -28,8 +28,8 @@
                         <tr ng-repeat="order in orderlist | filter: searchText">
                             <td><a href="/#!/orderdetail/{{order.OrderFormId}}">{{order.OrderNumber}}</a></td>
                             <td>{{order.SalesPerson}}</td>
-                            <td>{{order.CustomerName}}</td>
-                            <td>{{order.ApparelQuantity}}</td>
+                            <td>{{order.Customer.CustomerName}}</td>
+                            <td>{{order.Apparel.ApparelQuantity}}</td>
                         </tr>
                     </tbody>
                 </table>
