@@ -11,6 +11,7 @@ namespace SilkScreenOrder.Models
         [Key]
         public int DesignId { get; set; }
 
+        [MaxLength(5)]
         public string AmountOfColorsOfDesign { get; set; }
 
         public decimal DesignHeight { get; set; }
@@ -22,9 +23,5 @@ namespace SilkScreenOrder.Models
         public string LogoLocations { get; set; }
 
         public string InkColorsToBeUsed { get; set; }
-
-        [Required]
-        public virtual OrderForm orderform { get; set; }
-
     }
 }

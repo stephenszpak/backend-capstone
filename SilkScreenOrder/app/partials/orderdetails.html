@@ -17,32 +17,51 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h4>Customer</h4>
-                    <p>Name: {{selectedOrder.CustomerName}}</p>
-                    <p>Address: {{selectedOrder.CustomerAddress}}</p>
-                    <p>Phone: {{selectedOrder.CustomerPhone}}</p>
-                    <p>E-Mail: {{selectedOrder.CustomerEmail}}</p>
-
+                    <p>Name: {{selectedOrder.Customer.CustomerName}}</p>
+                    <p>Address: {{selectedOrder.Customer.CustomerAddress}}</p>
+                    <p>Phone: {{selectedOrder.Customer.CustomerPhone}}</p>
+                    <p>E-Mail: {{selectedOrder.Customer.CustomerEmail}}</p>
                 </div>
             </div>
 
-               
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Design</h4>
+                    <p>Height: {{selectedOrder.Design.DesignHeight}}</p>
+                    <p>Width: {{selectedOrder.Design.DesignWidth}}</p>
+                    <p>Logo Location(s): {{selectedOrder.Design.LogoLocations}}</p>
+                    <p># of Colors: {{selectedOrder.Design.AmountOfColorsOfDesign}}</p>
+                    <p>Ink Color(s): {{selectedOrder.Design.InkColorsToBeUsed}}</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Garment</h4>
+                    <p>Type: {{selectedOrder.Apparel.ApparelType}}</p>
+                    <p>Brand: {{selectedOrder.Apparel.ApparelBrand}}</p>
+                    <p>Quantity: {{selectedOrder.Apparel.ApparelQuantity}}</p>
+                    <p>Color: {{selectedOrder.Apparel.ApparelColor}}</p>
+                    <p>Price per piece: {{selectedOrder.Apparel.ApparelPricePerPiece}}</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Fees</h4>
+                    <p>Printing Fee: {{selectedOrder.PrintingFee}}</p>
+                    <p>Design Fee: {{selectedOrder.Design.DesignFee}}</p>
+                    <p>Total: {{selectedOrder.TotalPrice}}</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Additional Notes</h4>
+                    <p>{{selectedOrder.AdditionalNotesToPrinter}}</p>
+                </div>
+            </div>
                 
-                {{selectedOrder.ApparelType}}<br />
-                {{selectedOrder.ApparelBrand}}<br />
-                {{selectedOrder.ApparelQuantity}}<br />
-                {{selectedOrder.ApparelPricePerPiece}}<br />
-                {{selectedOrder.ApparelColor}}<br />
-                {{selectedOrder.AmountOfColorsOfDesign}}<br />
-                {{selectedOrder.DesignHeight}}<br />
-                {{selectedOrder.DesignWidth}}<br />
-                {{selectedOrder.LogoLocations}}<br />
-                {{selectedOrder.DesignFee}}<br />
-                {{selectedOrder.InkColorsToBeUsed}}<br />
-
-                {{selectedOrder.TotalPrice}}<br />
-                {{selectedOrder.AdditionalNotesToPrinter}}<br />
-
 
         <div class="footer">
             <button class="btn-primary" ng-click="backToOrders()">Back to Orders</button>

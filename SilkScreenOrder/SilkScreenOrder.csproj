@@ -292,65 +292,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706092013062_InitialCreate.cs" />
-    <Compile Include="Migrations\201706092013062_InitialCreate.Designer.cs">
-      <DependentUpon>201706092013062_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201706171509246_init.cs" />
+    <Compile Include="Migrations\201706171509246_init.Designer.cs">
+      <DependentUpon>201706171509246_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706092025380_updateCreate.cs" />
-    <Compile Include="Migrations\201706092025380_updateCreate.Designer.cs">
-      <DependentUpon>201706092025380_updateCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201706171650273_modelview.cs" />
+    <Compile Include="Migrations\201706171650273_modelview.Designer.cs">
+      <DependentUpon>201706171650273_modelview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706092124257_newthing.cs" />
-    <Compile Include="Migrations\201706092124257_newthing.Designer.cs">
-      <DependentUpon>201706092124257_newthing.cs</DependentUpon>
+    <Compile Include="Migrations\201706181823158_added printing fee.cs" />
+    <Compile Include="Migrations\201706181823158_added printing fee.Designer.cs">
+      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706101612302_orderThingy.cs" />
-    <Compile Include="Migrations\201706101612302_orderThingy.Designer.cs">
-      <DependentUpon>201706101612302_orderThingy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706101623049_fixedordermodel.cs" />
-    <Compile Include="Migrations\201706101623049_fixedordermodel.Designer.cs">
-      <DependentUpon>201706101623049_fixedordermodel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706121857319_new Order form.cs" />
-    <Compile Include="Migrations\201706121857319_new Order form.Designer.cs">
-      <DependentUpon>201706121857319_new Order form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706122318248_reworkingDatabase.cs" />
-    <Compile Include="Migrations\201706122318248_reworkingDatabase.Designer.cs">
-      <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706131948103_update orderform model.cs" />
-    <Compile Include="Migrations\201706131948103_update orderform model.Designer.cs">
-      <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706132258062_deleted order model.cs" />
-    <Compile Include="Migrations\201706132258062_deleted order model.Designer.cs">
-      <DependentUpon>201706132258062_deleted order model.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706162242546_updated model scheme.cs" />
-    <Compile Include="Migrations\201706162242546_updated model scheme.Designer.cs">
-      <DependentUpon>201706162242546_updated model scheme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706162302337_updated model scheme part 2.cs" />
-    <Compile Include="Migrations\201706162302337_updated model scheme part 2.Designer.cs">
-      <DependentUpon>201706162302337_updated model scheme part 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706162321004_updated model scheme part 3.cs" />
-    <Compile Include="Migrations\201706162321004_updated model scheme part 3.Designer.cs">
-      <DependentUpon>201706162321004_updated model scheme part 3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706171419215_updated model schema part 4.cs" />
-    <Compile Include="Migrations\201706171419215_updated model schema part 4.Designer.cs">
-      <DependentUpon>201706171419215_updated model schema part 4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706171430489_updated model schema part 5.cs" />
-    <Compile Include="Migrations\201706171430489_updated model schema part 5.Designer.cs">
-      <DependentUpon>201706171430489_updated model schema part 5.cs</DependentUpon>
+    <Compile Include="Migrations\201706181846190_added max length to number of colors.cs" />
+    <Compile Include="Migrations\201706181846190_added max length to number of colors.Designer.cs">
+      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AddOrderViewModel.cs" />
     <Compile Include="Models\Apparel.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Design.cs" />
@@ -451,47 +412,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706092013062_InitialCreate.resx">
-      <DependentUpon>201706092013062_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706171509246_init.resx">
+      <DependentUpon>201706171509246_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706092025380_updateCreate.resx">
-      <DependentUpon>201706092025380_updateCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706171650273_modelview.resx">
+      <DependentUpon>201706171650273_modelview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706092124257_newthing.resx">
-      <DependentUpon>201706092124257_newthing.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706181823158_added printing fee.resx">
+      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706101612302_orderThingy.resx">
-      <DependentUpon>201706101612302_orderThingy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706101623049_fixedordermodel.resx">
-      <DependentUpon>201706101623049_fixedordermodel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706121857319_new Order form.resx">
-      <DependentUpon>201706121857319_new Order form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706122318248_reworkingDatabase.resx">
-      <DependentUpon>201706122318248_reworkingDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706131948103_update orderform model.resx">
-      <DependentUpon>201706131948103_update orderform model.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706132258062_deleted order model.resx">
-      <DependentUpon>201706132258062_deleted order model.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706162242546_updated model scheme.resx">
-      <DependentUpon>201706162242546_updated model scheme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706162302337_updated model scheme part 2.resx">
-      <DependentUpon>201706162302337_updated model scheme part 2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706162321004_updated model scheme part 3.resx">
-      <DependentUpon>201706162321004_updated model scheme part 3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706171419215_updated model schema part 4.resx">
-      <DependentUpon>201706171419215_updated model schema part 4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706171430489_updated model schema part 5.resx">
-      <DependentUpon>201706171430489_updated model schema part 5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706181846190_added max length to number of colors.resx">
+      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

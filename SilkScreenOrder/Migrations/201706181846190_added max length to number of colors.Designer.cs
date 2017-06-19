@@ -7,13 +7,13 @@ namespace SilkScreenOrder.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class updatedmodelschemapart5 : IMigrationMetadata
+    public sealed partial class addedmaxlengthtonumberofcolors : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(updatedmodelschemapart5));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedmaxlengthtonumberofcolors));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706171430489_updated model schema part 5"; }
+            get { return "201706181846190_added max length to number of colors"; }
         }
         
         string IMigrationMetadata.Source
