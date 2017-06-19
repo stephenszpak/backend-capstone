@@ -1,5 +1,5 @@
-﻿<h1>ORDERS</h1>
-
+﻿<h1 class="text-center">Orders</h1>
+<hr class="small-line" /
 <div class="container">
     <div class="row">
         <div class="col-md-8">
@@ -21,7 +21,6 @@
                             <th>Order Number</th>
                             <th>Sales Person</th>
                             <th>Customer</th>
-                            <th>Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,7 +28,6 @@
                             <td><a href="/#!/orderdetail/{{order.OrderFormId}}">{{order.OrderNumber}}</a></td>
                             <td>{{order.SalesPerson}}</td>
                             <td>{{order.Customer.CustomerName}}</td>
-                            <td>{{order.Apparel.ApparelQuantity}}</td>
                         </tr>
                     </tbody>
                 </table>
