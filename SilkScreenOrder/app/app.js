@@ -17,18 +17,6 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         .when("/orderform", {
             templateUrl: "/app/partials/orderform.html",
             controller: "orderFormController"
-        })
-        .when("/design", {
-            templateUrl: "/app/partials/design.html",
-            controller: "designController"
-        })
-        .when("/apparel", {
-            templateUrl: "/app/partials/apparel.html",
-            controller: "apparelController"
-        })
-        .when("/customer", {
-            templateUrl: "/app/partials/customer.html",
-            controller: "customerController"
         });
 }
 ]);
