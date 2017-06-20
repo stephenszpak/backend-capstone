@@ -7,13 +7,13 @@ namespace SilkScreenOrder.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addedprintingfee : IMigrationMetadata
+    public sealed partial class initialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedprintingfee));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706181823158_added printing fee"; }
+            get { return "201706200001322_initialCreate"; }
         }
         
         string IMigrationMetadata.Source

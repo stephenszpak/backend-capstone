@@ -101,8 +101,5 @@ C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScre
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\bin\Microsoft.ReportViewer.Common.dll
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\bin\Microsoft.ReportViewer.WebForms.DLL
-C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.init.resources
+C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.initialCreate.resources
 C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.csproj.GenerateResource.Cache
-C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.modelview.resources
-C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.addedprintingfee.resources
-C:\Users\NSSStudent\Documents\SilkScreenOrder\SilkScreenOrder\obj\Debug\SilkScreenOrder.Migrations.addedmaxlengthtonumberofcolors.resources

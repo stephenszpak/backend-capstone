@@ -91,7 +91,7 @@
             </div>
             <div class="form-group">
                 <label for="ApparelQuantity">Quantity</label>
-                <input type="number" class="form-control" id="ApparelQuantity" placeholder="Quantity" ng-model="newOrder.ApparelQuantity" />
+                <input type="number" class="form-control" id="ApparelQuantity" placeholder="Quantity" ng-change="recalculate()" ng-model="newOrder.ApparelQuantity" />
             </div>
         </div>
         <div class="col-md-5">
@@ -101,7 +101,7 @@
             </div>
             <div class="form-group">
                 <label for="ApparelPricePerPiece">Price Per Garment</label>
-                <input type="number" class="form-control" id="ApparelPricePerPiece" placeholder="Price per Garment" ng-model="newOrder.ApparelPricePerPiece" />
+                <input type="number" class="form-control" id="ApparelPricePerPiece" placeholder="Price per Garment" ng-change="recalculate()" ng-model="newOrder.ApparelPricePerPiece" />
             </div>
         </div>
     </div> <!-- end of row -->
@@ -116,17 +116,17 @@
             <!-- Printing Fee -->
             <div class="form-group">
                 <label for="PrintingFee">Printing Fee</label>
-                <input type="text" class="form-control" id="Printing Fee" placeholder="Printing Fee" ng-model="newOrder.PrintingFee" />
+                <input type="number" class="form-control" id="PrintingFee" placeholder="Printing Fee" ng-change="recalculate()" ng-model="newOrder.OrderForm.PrintingFee" />
             </div>
             <!-- Design Fee -->
             <div class="form-group">
                 <label for="DesignFee">Design Fee</label>
-                <input type="text" class="form-control" id="DesignFee" placeholder="Design Fee" ng-model="newOrder.DesignFee" />
+                <input type="number" class="form-control" id="DesignFee" placeholder="Design Fee" ng-change="recalculate()" ng-model="newOrder.DesignFee" />
             </div>
             <!-- Total Price-->
             <div class="form-group">
                 <label for="TotalPrice">Total Price</label>
-                <input type="number" class="form-control" id="TotalPrice" placeholder="Total Price" ng-model="newOrder.TotalPrice" />
+                <input type="number" disabled class="form-control" id="TotalPrice" placeholder="Total Price" ng-model="newOrder.TotalPrice" />
             </div>
         </div>
         <div class="col-md-6">
