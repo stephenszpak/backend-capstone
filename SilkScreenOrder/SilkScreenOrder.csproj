@@ -292,21 +292,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706171509246_init.cs" />
-    <Compile Include="Migrations\201706171509246_init.Designer.cs">
-      <DependentUpon>201706171509246_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706171650273_modelview.cs" />
-    <Compile Include="Migrations\201706171650273_modelview.Designer.cs">
-      <DependentUpon>201706171650273_modelview.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706181823158_added printing fee.cs" />
-    <Compile Include="Migrations\201706181823158_added printing fee.Designer.cs">
-      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706181846190_added max length to number of colors.cs" />
-    <Compile Include="Migrations\201706181846190_added max length to number of colors.Designer.cs">
-      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
+    <Compile Include="Migrations\201706200001322_initialCreate.cs" />
+    <Compile Include="Migrations\201706200001322_initialCreate.Designer.cs">
+      <DependentUpon>201706200001322_initialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -412,17 +400,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706171509246_init.resx">
-      <DependentUpon>201706171509246_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706171650273_modelview.resx">
-      <DependentUpon>201706171650273_modelview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706181823158_added printing fee.resx">
-      <DependentUpon>201706181823158_added printing fee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706181846190_added max length to number of colors.resx">
-      <DependentUpon>201706181846190_added max length to number of colors.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706200001322_initialCreate.resx">
+      <DependentUpon>201706200001322_initialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

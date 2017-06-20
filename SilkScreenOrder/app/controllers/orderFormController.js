@@ -10,22 +10,25 @@
             });
     };
 
-    $scope.submitDesign = function (design) {
-        $http.post('api/design', design)
-            .then(function (result) {
-                console.log("design", result);
-            });
-    };
+    //Converts undefined to 0 or the number in the input
+    function ensureNumber(num) {
+        return num ? num : 0;
+    }
 
-    $scope.submitCustomer = function (customer) {
-        $http.post('api/customer', customer)
-            .then(function (result) {
-                console.log("customer", result);
-            });
-    };
-
-    $scope.submitApparel = function (apparel) {
-        
-    };
-
+    $scope.recalculate = function () {
+        if ($scope.newOrder.ApparelQuantity > 10)
+        {
+            $scope.newOrder.TotalPrice =
+                (ensureNumber($scope.newOrder.ApparelQuantity) * ensureNumber($scope.newOrder.ApparelPricePerPiece))
+                + (ensureNumber($scope.newOrder.ApparelQuantity) * ensureNumber($scope.newOrder.PrintingFee))
+                + ensureNumber($scope.newOrder.DesignFee);
+        }
+        else if($scope.newOrder.ApparelQuantity < 10)
+        {
+            $scope.newOrder.TotalPrice = ensureNumber($scope.newOrder.ApparelQuantity)
+                * ensureNumber($scope.newOrder.ApparelPricePerPiece)
+                + ensureNumber($scope.newOrder.PrintingFee)
+                + ensureNumber($scope.newOrder.DesignFee);
+        }
+    }
 }]);
