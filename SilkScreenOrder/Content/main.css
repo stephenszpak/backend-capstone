@@ -261,3 +261,7 @@ hr.small-line{
     max-width: 30%;
     margin: 25px auto 30px;
 }
+
+longer-input-box{
+    max-width: 100%;
+}

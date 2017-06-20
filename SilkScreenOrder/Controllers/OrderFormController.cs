@@ -12,9 +12,6 @@ namespace SilkScreenOrder.Controllers
     public class OrderFormController : ApiController
     {
         readonly IOrderFormRepo _orderFormRepo;
-        //readonly IDesignRepo _designRepo;
-        //readonly IApparelRepo _apparelRepo;
-        //readonly ICustomerRepo _customerRepo;
 
         public OrderFormController(IOrderFormRepo orderFormRepo,IApparelRepo apparelRepo, IDesignRepo designRepo,ICustomerRepo customerRepo)
         {
@@ -29,6 +26,7 @@ namespace SilkScreenOrder.Controllers
             return showAllOrderForms;
         }
             
+        //Add Order View, POSTS to all entities
         [Route("api/orderform")]
         [HttpPost]
         public void AddOrderForm(AddOrderViewModel newOrderForm)
@@ -66,12 +64,10 @@ namespace SilkScreenOrder.Controllers
                 OrderDueDate = newOrderForm.OrderDueDate,
                 OrderNumber = newOrderForm.OrderNumber,
                 SalesPerson = newOrderForm.SalesPerson,
+                PrintingFee = newOrderForm.PrintingFee,
                 TotalPrice = newOrderForm.TotalPrice
             };
 
-            //_designRepo.AddDesign(newDesign);
-            //_apparelRepo.AddApparel(newApparel);
-            //_customerRepo.AddCustomer(newCustomer);
             _orderFormRepo.AddOrderForm(order);
 
         }
