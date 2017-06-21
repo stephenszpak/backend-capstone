@@ -23,7 +23,6 @@
                     <p>E-Mail: {{selectedOrder.Customer.CustomerEmail}}</p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-sm-4">
                     <h4>Design</h4>
@@ -34,7 +33,6 @@
                     <p>Ink Color(s): {{selectedOrder.Design.InkColorsToBeUsed}}</p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-sm-4">
                     <h4>Garment</h4>
@@ -54,15 +52,12 @@
                     <p>Total: {{selectedOrder.TotalPrice}}</p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-sm-12">
                     <h4>Additional Notes</h4>
                     <p>{{selectedOrder.AdditionalNotes}}</p>
                 </div>
             </div>
-                
-
         <div class="footer">
             <button class="btn-primary" ng-click="backToOrders()">Back to Orders</button>
             <button class="btn-danger" ng-click="deleteOrder(OrderFormId)"><i class="fa fa-trash" aria-hidden="true"></i></button>
