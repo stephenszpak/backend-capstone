@@ -17,6 +17,10 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         .when("/orderform", {
             templateUrl: "/app/partials/orderform.html",
             controller: "orderFormController"
+        })
+        .when("/customers", {
+            templateUrl: "/app/partials/customers.html",
+            controller: "customerController"
         });
 }
 ]);
