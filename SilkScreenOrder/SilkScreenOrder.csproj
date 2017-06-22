@@ -316,10 +316,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controllers\customerController.js" />
     <Content Include="app\controllers\homeController.js" />
     <Content Include="app\controllers\orderFormController.js" />
     <Content Include="app\controllers\ordersController.js" />
     <Content Include="app\controllers\orderViewController.js" />
+    <Content Include="app\images\FullSizeRender.jpg" />
+    <Content Include="app\images\PanoSqueegee.jpg" />
+    <Content Include="app\partials\customers.html" />
     <Content Include="app\partials\home.html" />
     <Content Include="app\partials\orderdetails.html" />
     <Content Include="app\partials\orders.html" />
@@ -387,7 +391,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\images\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
